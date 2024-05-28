@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.square{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square span:nth-child(1){
+    position: absolute;
+     
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#33333723 50%, #096bb6d8 40%);
+    box-shadow: 0 0 50px rgb(25, 0, 225), insert 0 0 50px rgb(25, 0, 225);
+    border-radius: 38% 62% 62% 38% / 37% 40% 60% 63%;
+    transition: 0.5s;
+    animation: animate1 6s linear infinite;
+    /* animation-delay: calc(-1s * var(--i)); */
+}
+
+.square span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#33333723 50%, #17bbc4d8 40%);
+    box-shadow: 0 0 50px rgb(25, 0, 225), insert 0 0 50px rgb(25, 0, 225);
+    border-radius: 38% 62% 62% 38% / 37% 40% 60% 63%;
+    transition: 0.5s;
+    animation: animate2 4s linear infinite;
+    /* animation-delay: calc(-1s * var(--i)); */
+}
+
+.square span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#33333723 50%, #1dafc2d8 40%);
+    box-shadow: 0 0 50px rgb(25, 0, 225), insert 0 0 50px rgb(25, 0, 225);
+    border-radius: 38% 62% 62% 38% / 37% 40% 60% 63%;
+    transition: 0.5s;
+    animation: animate3 8s linear infinite;
+    /* animation-delay: calc(-1s * var(--i)); */
+}
+
+@keyframes animate1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animate3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
